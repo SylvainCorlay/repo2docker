@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 from traitlets import Dict
 
 TEMPLATE = r"""
-FROM buildpack-deps:bionic
+FROM rapidsai/rapidsai:cuda10.2-runtime-ubuntu18.04
 
 # avoid prompts from apt
 ENV DEBIAN_FRONTEND=noninteractive
